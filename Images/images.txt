@@ -1,1 +1,0 @@
-I probably could've found a way of not doing this all manually, but I didn't.
