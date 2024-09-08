@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prelude</title>
+    <link rel="icon" href="Images/favicon.png">
+    <script src="jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="w3.css">
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li class="dropdown">
+      <a href="levels.html" class="dropbtn active" style="color: black !important">Levels</a>
+      <div class="dropdown-content">
+        <a href="overture.html">OVERTURE: THE MOUTH OF HELL</a>
+        <a href="acti.html">ACT I: INFINITE HYPERDEATH</a>
+        <a href="actii.html">ACT II: IMPERFECT HATRED</a>
+        <a href="actiii.html">ACT III: GODFIST SUICIDE</a>
+        <a href="psanctums.html">PRIME SANCTUMS</a>
+      </div>
+      <li><a href="overall-stats.html">Stats</a></li>
+    <li><a href="credits.html">Credits</a></li>
+    <li><a href="settings.html">Settings</a></li>
+          </ul>
+</head>
+<body>
+    <p  style="margin-top: 5px;text-indent: 15px;" class="p4">OVERTURE: THE MOUTH OF HELL</p>
+    <hr width="98%" size="4" style="margin-top: -55px;" color="#FFFFFF">
+    <br>
+    <button class="buttonlayer4" id="select0-1"> 0-1: INTO THE FIRE</button>
+    <br>
+    <button class="buttonlayer5" id="select0-2"> 0-2: THE MEATGRINDER</button>
+    <br>
+    <button class="buttonlayer6" id="select0-3"> 0-3: DOUBLE DOWN</button>
+    <br>
+    <button class="buttonlayer7" id="select0-4"> 0-4: A ONE-MACHINE ARMY</button>
+    <br>
+    <button class="buttonlayer8" id="select0-5"> 0-5: CERBERUS</button>
+    <br>
+    <button class="buttonlayerover"style="background-image: url(Images/Buttons/0-S_Someting_Wicked.png);" id="select0-S"> 0-S: SOMETHING WICKED</button>
+    <br>
+    <div id="progresstextsecrets" style="display: block;margin-left: auto;margin-right: auto;width:50%;text-align:center;font-family: VCROSDMONO; color: #FFFFFF; font-size: 25px; height: 40px;"></div>
+    <div class="center" id="progresstextsecrets"></div>
+    <div class="center3" id="center3progressscrts" style="width: fit-content;">
+    <div class="pixel-corners--wrapper">
+    <div id="secretsprgrswrpr" class="progressbar">
+      <div id="secretsprgrs"></div>
+    </div>
+  </div>
+
+
+<br><br>
+  <div id="progresstextchallenge" style="display: block;margin-left: auto;margin-right: auto;width:80%;text-align:center;font-family: VCROSDMONO; color: #FFFFFF; font-size: 25px; height: 40px;"></div>
+  <div class="center" id="progresstextchallenge"></div>
+  <div class="center3" id="center3progresschlng" style="width: fit-content;">
+  <div class="pixel-corners--wrapper">
+  <div id="challengeprgrswrpr" class="progressbar">
+    <div id="challengeprgrs"></div>
+  </div>
+</div>
+
+<br><br>
+  <div id="progresstextranks" style="display: block;margin-left: auto;margin-right: auto;width:80%;text-align:center;font-family: VCROSDMONO; color: #FFFFFF; font-size: 25px; height: 40px;"></div>
+  <div class="center" id="progresstextranks"></div>
+  <div class="center3" id="center3progressrnk" style="width: fit-content;">
+  <div class="pixel-corners--wrapper">
+  <div id="rankprgrswrpr" class="progressbar">
+    <div id="rankprgrs"></div>
+  </div>
+</div>
+
+<br><br>
+  <div id="progresstextall" style="display: block;margin-left: auto;margin-right: auto;width:80%;text-align:center;font-family: VCROSDMONO; color: #FFFFFF; font-size: 25px; height: 40px;"></div>
+  <div class="center" id="progresstextall"></div>
+  <div class="center3" id="center3progressall" style="width: fit-content;">
+  <div class="pixel-corners--wrapper">
+  <div id="allprgrswrpr" class="progressbar">
+    <div id="allprgrs"></div>
+  </div>
+</div>
+<br>
+
+</div>
+
+    <script>
+              $(document).ready(function(){
+        $("#select0-1").click(function(){
+          window.location.href = "Level Pages/0-1_into_the_fire.html";
+        })
+        $("#select0-2").click(function(){
+          window.location.href = "Level Pages/0-2_the_meatgrinder.html";
+        })
+        $("#select0-3").click(function(){
+          window.location.href = "Level Pages/0-3_double_down.html";
+        })
+        $("#select0-4").click(function(){
+          window.location.href = "Level Pages/0-4_a_one-machine_army.html";
+        })
+        $("#select0-5").click(function(){
+          window.location.href = "Level Pages/0-5_cerberus.html";
+        })
+        $("#select0-S").click(function(){
+          window.location.href = "Level Pages/0-S_something_wicked.html";
+        })
+        function percentage(partialValue, totalValue) {
+        return (100 * partialValue) / totalValue;
+        }
+        var secretsgotten = 0;
+        const preludeprgsecrets = [localStorage.s1001, localStorage.s2001, localStorage.s3001, localStorage.s4001, localStorage.s5001, localStorage.s1002, localStorage.s2002, localStorage.s3002, localStorage.s4002, localStorage.s5002, localStorage.s1003, localStorage.s2003, localStorage.s3003,localStorage.s1004, localStorage.s2004, localStorage.s3004]
+        var secretstotal = preludeprgsecrets.length;
+
+        function iftruesecrets(value){
+          if (value == "true"){
+            secretsgotten += 1
+          }
+        }
+        preludeprgsecrets.forEach(iftruesecrets);
+        var secretsprcntg = percentage(secretsgotten, secretstotal);
+
+        console.log("Secrets Percentage: " + secretsprcntg)
+
+
+
+
+        
+        var rnkgotten = 0;
+        const preludeprgrnk = [localStorage.rnk001, localStorage.rnk002, localStorage.rnk003, localStorage.rnk004, localStorage.rnk005];
+        var rnktotal = preludeprgrnk.length * 7;
+
+        function iftruernk(value){
+          if (value == "D"){
+            rnkgotten += 1
+          }
+          else if (value == "C"){
+            rnkgotten += 2
+          }
+          else if (value == "B"){
+            rnkgotten += 3
+          }
+          else if (value == "A"){
+            rnkgotten += 4
+          }
+          else if (value == "S"){
+            rnkgotten += 5
+          }
+          else if (value == "P"){
+            rnkgotten += 7
+          }
+        }
+        preludeprgrnk.forEach(iftruernk);
+        var rnkprcntg = percentage(rnkgotten, rnktotal);
+
+        console.log("Ranks Percentage: " + rnkprcntg);
+
+    
+
+
+        var chlgotten = 0;
+        const preludeprgchl = [localStorage.chl001, localStorage.chl002, localStorage.chl003, localStorage.chl004, localStorage.chl005];
+        var chltotal = preludeprgchl.length;
+
+        function iftruechl(value){
+          if (value == "true"){
+            chlgotten += 1
+          }
+        }
+        preludeprgchl.forEach(iftruechl);
+        var chlprcntg = percentage(chlgotten, chltotal);
+        var overallprcntg = (((30 * chlprcntg) + (40 * rnkprcntg) + (30 * secretsprcntg)) / 100)
+    console.log(overallprcntg);
+
+        console.log("Challenges Percentage: " + chlprcntg);
+        var percentagemin = Math.min(secretsprcntg, rnkprcntg, chlprcntg, overallprcntg)
+
+
+if(percentagemin > 35){
+  $("#secretsprgrs").text("SECRETS PROGRESS:" + Math.round(secretsprcntg) + "%")
+}
+else if (percentagemin < 35)
+{
+  $("#progresstextsecrets").append("SECRETS PROGRESS:" + Math.round(secretsprcntg) + "%")
+}
+$("#secretsprgrs").css("width", secretsprcntg + "%")
+
+if(percentagemin > 35){
+  $("#rankprgrs").text("RANKS PROGRESS:" + Math.round(rnkprcntg) + "%")
+}
+else if (percentagemin < 35)
+{
+  $("#progresstextranks").append("RANKS PROGRESS:" + Math.round(rnkprcntg) + "%")
+}
+$("#rankprgrs").css("width", rnkprcntg + "%")
+
+if(percentagemin > 35){
+  $("#challengeprgrs").text("CHALLENGE PROGRESS:" + Math.round(chlprcntg) + "%")
+}
+else if (percentagemin < 35)
+{
+  $("#progresstextchallenge").append("CHALLENGE PROGRESS:" + Math.round(chlprcntg) + "%")
+}
+$("#challengeprgrs").css("width", Math.round(chlprcntg) + "%")
+
+
+if(percentagemin > 35){
+  $("#allprgrs").text("OVERALL PROGRESS:" + Math.round(overallprcntg) + "%")
+}
+else if (percentagemin < 35)
+{
+  $("#progresstextall").append("OVERALL PROGRESS:" + Math.round(overallprcntg) + "%")
+}
+$("#allprgrs").css("width", Math.round(overallprcntg) + "%")
+localStorage.setItem(overallprcntg, toString(Math.round(overallprcntg)))
+
+
+
+
+
+    })
+
+    </script>
+</body>
+</html>

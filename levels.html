@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ULTRAKILL Completion Tracker</title>
+    <link rel="icon" href="Images/favicon.png">
+    <script src="jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="levels.html" class="dropbtn active" style="color: black !important">Levels</a>
+          <div class="dropdown-content">
+            <a href="overture.html">OVERTURE: THE MOUTH OF HELL</a>
+            <a href="acti.html">ACT I: INFINITE HYPERDEATH</a>
+            <a href="actii.html">ACT II: IMPERFECT HATRED</a>
+            <a href="actiii.html">ACT III: GODFIST SUICIDE</a>
+            <a href="psanctums.html">PRIME SANCTUMS</a>
+          </div>
+          <li><a href="overall-stats.html">Stats</a></li>
+        <li><a href="credits.html">Credits</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+      <br><br>
+
+      <img src="Images/ultrakill-logo.png"  class="center"><img>
+
+      <button class="buttonlayer3" id="preludeselect"> PRELUDE</button>
+
+      <br>
+
+        <button class="buttonlayer3" id="actiselect"> ACT I - INFINITE HYPERDEATH</button>
+
+      <br>
+
+            <button class="buttonlayer3" id="actiiselect"> ACT II - IMPERFECT HATRED</button>
+
+      <br>
+        <button class="buttonlayer3" id="actiiiselect"> ACT III - GODFIST SUICIDE</button>
+
+      <br><br><br>
+        <button class="buttonlayer3" id="primesanctumsselect"> PRIME SANCTUMS</button>
+      <script>        
+      $(document).ready(function(){
+        $("#preludeselect").click(function(){
+          window.location.href = "overture.html";
+        })
+        $("#actiselect").click(function(){
+          window.location.href = "acti.html";
+        })
+
+    })</script>
+</body>
+</html>

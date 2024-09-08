@@ -1,0 +1,730 @@
+@font-face {
+    font-family: VCROSDMONO;
+    src: url(Fonts/VCR_OSD_MONO_1.001.ttf);
+  }
+  a {
+    color: red;
+    text-decoration:none;
+    }
+  .inputtext {
+    background: black;
+    border: 2px solid rgb(255, 255, 255);
+    width: 180px;
+    color:#FFFFFF;
+    font-family: "VCROSDMONO";
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    font-size: 16px;
+}
+  .p1 {
+  font-family: "VCROSDMONO";
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  }
+
+  .p2 {
+  font-family: "VCROSDMONO";
+  color: #FFFFFF;
+  font-size: 20px;
+  text-align: left;
+  }
+  .p3 {
+    font-family: "VCROSDMONO";
+    color: #FFFFFF;
+    font-size: 40px;
+    }
+.p4 {
+  font-family: "VCROSDMONO";
+  color: #FFFFFF;
+  font-size: 60px;
+}
+.p5 {
+  font-family: "VCROSDMONO";
+  color: #FFFFFF;
+  font-size: 40px;
+  text-align: left;
+}
+.p6 {
+  font-family: "VCROSDMONO";
+  color: #FFFFFF;
+  font-size: 25px;
+  text-align: left;
+}
+.p7 {
+  font-family: "VCROSDMONO";
+  color: #FFFFFF;
+  text-align: left;
+  font-size: 18px;
+  }
+  .mankinddead{
+    font-family: "VCROSDMONO";
+    color: #ff0000;
+    line-height: 1.8;
+    text-align: center;
+    font-size: 25px;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #570505;
+  }
+  body {
+          background-color: #000000;
+          margin: 0;
+          padding: 0;
+        }
+.centerpagetextdiv
+{
+  background: #000000;
+  background-color: #000000;
+  width: 80%;
+  height: 100%;
+  min-height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+.iframe-container {
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+}
+.centerpagetextdiv2
+{
+  background: #000000;
+  background-color: #000000;
+  width: 50%;
+  height: 100%;
+  min-height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+.bodyimage
+{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-color: rgba(0,0,0,0.4);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: VCROSDMONO;
+  }
+  
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  .active {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  /* Add a gray right border to all list items, except the last item (last-child) */
+  .buttonlayer
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "VCROSDMONO";
+    color: #FFFFFF;
+    font-size: 25px;
+    text-align: left;
+    width: 450px;
+    height: 60px;
+    background-color: #000000;
+    text-indent: 10px;
+  }
+  .buttonlayer2
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "VCROSDMONO";
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 7px;
+  }
+  .buttonlayer11
+  {
+    margin-right:auto;
+    margin-left: auto;
+    display: block;
+    font-family: "VCROSDMONO";
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 7px;
+  }
+  .buttonlayer9
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "VCROSDMONO";
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    background-color: #000000;
+    padding: 5px;
+  }
+  .buttonlayer10
+  {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "VCROSDMONO";
+    color: #FFFFFF;
+    font-size: 20px;
+    text-align: center;
+    width: 170px;
+    height: 40px;
+    background-color: #000000;
+    border: 5px solid #FFFFFF;
+    border-radius: 5px;
+    padding: 5px;
+    
+  }
+.pixel-corners--wrapper:hover {
+    cursor:pointer;
+  }
+.buttonlayer9:hover
+{
+  cursor:pointer;
+}
+  .buttonlayer3
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "VCROSDMONO";
+    color: #FFFFFF;
+    font-size: 25px;
+    text-align: left;
+    width: 450px;
+    height: 60px;
+    background-color: #000000;
+    text-indent: 10px;
+    border-color: #FFFFFF;
+    border-radius: 5px;
+    border-width: 2px;
+  }
+  .buttonlayer4
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "VCROSDMONO";
+    color: #FFFFFF;
+    font-size: 25px;
+    text-align: left;
+    width: 450px;
+    height: 60px;
+    background-color: transparent;
+    text-indent: 10px;
+    border-color: #FFFFFF;
+    border-radius: 5px;
+    border-width: 2px;
+    background-image: url(Images/Buttons/0-1_Into_the_Fire.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-color: rgba(0,0,0,0.6);
+
+  }
+  li {
+    border-right: 1px solid #bbb;
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    min-width: 600px;
+  }
+  .center2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+  }
+    .center3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:fit-content;
+  }
+  .centerbox1 {
+    width: 200px;
+    height: 320px;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid rgb(255, 255, 255);
+  }
+  .pixel-corners,
+  .pixel-corners--wrapper {
+    clip-path: polygon(0px calc(100% - 8px),
+      4px calc(100% - 8px),
+      4px calc(100% - 4px),
+      8px calc(100% - 4px),
+      8px 100%,
+      calc(100% - 8px) 100%,
+      calc(100% - 8px) calc(100% - 4px),
+      calc(100% - 4px) calc(100% - 4px),
+      calc(100% - 4px) calc(100% - 8px),
+      100% calc(100% - 8px),
+      100% 8px,
+      calc(100% - 4px) 8px,
+      calc(100% - 4px) 4px,
+      calc(100% - 8px) 4px,
+      calc(100% - 8px) 0px,
+      8px 0px,
+      8px 4px,
+      4px 4px,
+      4px 8px,
+      0px 8px);
+    position: relative;
+  }
+  .pixel-corners {
+    border: 4px solid transparent;
+  }
+  .pixel-corners--wrapper {
+    display: inline-block;
+    margin-left: 2px;
+    margin-right: 2px;
+    width: fit-content;
+    height: fit-content;
+  }
+  .pixel-corners--wrapper .pixel-corners {
+    display: block;
+    clip-path: polygon(4px 8px,
+      8px 8px,
+      8px 4px,
+      calc(100% - 8px) 4px,
+      calc(100% - 8px) 8px,
+      calc(100% - 4px) 8px,
+      calc(100% - 4px) calc(100% - 8px),
+      calc(100% - 8px) calc(100% - 8px),
+      calc(100% - 8px) calc(100% - 4px),
+      8px calc(100% - 4px),
+      8px calc(100% - 8px),
+      4px calc(100% - 8px));
+  }
+  .pixel-corners::after,
+  .pixel-corners--wrapper::after {
+    content: "";
+    position: absolute;
+    clip-path: polygon(0px calc(100% - 8px),
+      4px calc(100% - 8px),
+      4px calc(100% - 4px),
+      8px calc(100% - 4px),
+      8px 100%,
+      calc(100% - 8px) 100%,
+      calc(100% - 8px) calc(100% - 4px),
+      calc(100% - 4px) calc(100% - 4px),
+      calc(100% - 4px) calc(100% - 8px),
+      100% calc(100% - 8px),
+      100% 8px,
+      calc(100% - 4px) 8px,
+      calc(100% - 4px) 4px,
+      calc(100% - 8px) 4px,
+      calc(100% - 8px) 0px,
+      8px 0px,
+      8px 4px,
+      4px 4px,
+      4px 8px,
+      0px 8px,
+      0px 50%,
+      4px 50%,
+      4px 8px,
+      8px 8px,
+      8px 4px,
+      calc(100% - 8px) 4px,
+      calc(100% - 8px) 8px,
+      calc(100% - 4px) 8px,
+      calc(100% - 4px) calc(100% - 8px),
+      calc(100% - 8px) calc(100% - 8px),
+      calc(100% - 8px) calc(100% - 4px),
+      8px calc(100% - 4px),
+      8px calc(100% - 8px),
+      4px calc(100% - 8px),
+      4px 50%,
+      0px 50%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    display: block;
+    pointer-events: none;
+  }
+  .pixel-corners::after {
+    margin: -4px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  .buttonlayerover
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "VCROSDMONO";
+    color: #FFFFFF;
+    font-size: 25px;
+    text-align: left;
+    width: 450px;
+    height: 60px;
+    background-color: transparent;
+    text-indent: 10px;
+    border-color: #FFFFFF;
+    border-radius: 5px;
+    border-width: 2px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-color: rgba(0,0,0,0.6);
+  }
+
+  .buttonlayer5
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "VCROSDMONO";
+    color: #FFFFFF;
+    font-size: 25px;
+    text-align: left;
+    width: 450px;
+    height: 60px;
+    background-color: transparent;
+    text-indent: 10px;
+    border-color: #FFFFFF;
+    border-radius: 5px;
+    border-width: 2px;
+    background-image: url(Images/Buttons/0-2_The_Meatgrinder.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-color: rgba(0,0,0,0.6);
+  }
+  .buttonlayer6
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "VCROSDMONO";
+    color: #FFFFFF;
+    font-size: 25px;
+    text-align: left;
+    width: 450px;
+    height: 60px;
+    background-color: transparent;
+    text-indent: 10px;
+    border-color: #FFFFFF;
+    border-radius: 5px;
+    border-width: 2px;
+    background-image: url(Images/Buttons/0-3_Double_Down.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-color: rgba(0,0,0,0.6);
+  }
+  .buttonlayer7
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "VCROSDMONO";
+    color: #FFFFFF;
+    font-size: 25px;
+    text-align: left;
+    width: 450px;
+    height: 60px;
+    background-color: transparent;
+    text-indent: 10px;
+    border-color: #FFFFFF;
+    border-radius: 5px;
+    border-width: 2px;
+    background-image: url(Images/Buttons/0-4_A_One-Machine_Army.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-color: rgba(0,0,0,0.6);
+  }
+  .buttonlayer8
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "VCROSDMONO";
+    color: #FFFFFF;
+    font-size: 25px;
+    text-align: left;
+    width: 450px;
+    height: 60px;
+    background-color: transparent;
+    text-indent: 10px;
+    border-color: #FFFFFF;
+    border-radius: 5px;
+    border-width: 2px;
+    background-image: url(Images/Buttons/0-5_Cerberus.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-color: rgba(0,0,0,0.6);
+  }
+
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  .imgstyle {
+    width: 250px;
+  }
+  .image {
+    width: fit-content;
+  }
+  .text {
+    font-size: 20px;
+    padding-left: 20px;
+    flex: 1;
+  }
+  .enemies{
+    width:50px;
+    height: 50px;
+    border: 5px solid #FFFFFF;
+    display: inline-block;
+
+  }
+  .enemiesdiv
+  {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .enemiesfig{
+    display: inline-block;
+    margin:0;
+  }
+
+
+
+
+
+
+
+  .pixel-corners2,
+  .pixel-corners2--wrapper {
+    clip-path: polygon(0px calc(100% - 8px),
+      4px calc(100% - 8px),
+      4px calc(100% - 4px),
+      8px calc(100% - 4px),
+      8px 100%,
+      calc(100% - 8px) 100%,
+      calc(100% - 8px) calc(100% - 4px),
+      calc(100% - 4px) calc(100% - 4px),
+      calc(100% - 4px) calc(100% - 8px),
+      100% calc(100% - 8px),
+      100% 8px,
+      calc(100% - 4px) 8px,
+      calc(100% - 4px) 4px,
+      calc(100% - 8px) 4px,
+      calc(100% - 8px) 0px,
+      8px 0px,
+      8px 4px,
+      4px 4px,
+      4px 8px,
+      0px 8px);
+    position: relative;
+  }
+  .pixel-corners2 {
+    border: 4px solid transparent;
+  }
+  .pixel-corners2--wrapper {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    height: fit-content;
+  }
+  .pixel-corners2--wrapper .pixel-corners2 {
+    display: block;
+    clip-path: polygon(4px 8px,
+      8px 8px,
+      8px 4px,
+      calc(100% - 8px) 4px,
+      calc(100% - 8px) 8px,
+      calc(100% - 4px) 8px,
+      calc(100% - 4px) calc(100% - 8px),
+      calc(100% - 8px) calc(100% - 8px),
+      calc(100% - 8px) calc(100% - 4px),
+      8px calc(100% - 4px),
+      8px calc(100% - 8px),
+      4px calc(100% - 8px));
+  }
+  .pixel-corners2::after,
+  .pixel-corners2--wrapper::after {
+    content: "";
+    position: absolute;
+    clip-path: polygon(0px calc(100% - 8px),
+      4px calc(100% - 8px),
+      4px calc(100% - 4px),
+      8px calc(100% - 4px),
+      8px 100%,
+      calc(100% - 8px) 100%,
+      calc(100% - 8px) calc(100% - 4px),
+      calc(100% - 4px) calc(100% - 4px),
+      calc(100% - 4px) calc(100% - 8px),
+      100% calc(100% - 8px),
+      100% 8px,
+      calc(100% - 4px) 8px,
+      calc(100% - 4px) 4px,
+      calc(100% - 8px) 4px,
+      calc(100% - 8px) 0px,
+      8px 0px,
+      8px 4px,
+      4px 4px,
+      4px 8px,
+      0px 8px,
+      0px 50%,
+      4px 50%,
+      4px 8px,
+      8px 8px,
+      8px 4px,
+      calc(100% - 8px) 4px,
+      calc(100% - 8px) 8px,
+      calc(100% - 4px) 8px,
+      calc(100% - 4px) calc(100% - 8px),
+      calc(100% - 8px) calc(100% - 8px),
+      calc(100% - 8px) calc(100% - 4px),
+      8px calc(100% - 4px),
+      8px calc(100% - 8px),
+      4px calc(100% - 8px),
+      4px 50%,
+      0px 50%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(239, 167, 0);
+    display: block;
+    pointer-events: none;
+  }
+  .pixel-corners2::after {
+    margin: -4px;
+  }
+
+
+  .progressbar {
+    background-color: black;
+    border-radius: 13px;
+    /* (height of inner div) / 2 + padding */
+    padding: 3px;
+    border-color: #000000;
+    width: 600px;
+    height: 40px;
+    color: #ffffff;
+    text-align: right;
+    vertical-align: middle;
+    line-height: 40px;
+    font-size: 20px;
+    font-family: VCROSDMONO;
+  }
+  
+  .progressbar>div {
+    background-color: rgb(255, 255, 255);
+    /* Adjust with JavaScript */
+    height: 40px;
+    border-radius: 10px;
+    font-family: VCROSDMONO;
+    color: #000000;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+  }
+
+
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1; color:#000000;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACT I: Infinite Hyperdeath</title>
+    <link rel="icon" href="Images/favicon.png">
+    <script src="jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="w3.css">
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li class="dropdown">
+      <a href="levels.html" class="dropbtn active" style="color: black !important">Levels</a>
+      <div class="dropdown-content">
+        <a href="overture.html">OVERTURE: THE MOUTH OF HELL</a>
+        <a href="acti.html">ACT I: INFINITE HYPERDEATH</a>
+        <a href="actii.html">ACT II: IMPERFECT HATRED</a>
+        <a href="actiii.html">ACT III: GODFIST SUICIDE</a>
+        <a href="psanctums.html">PRIME SANCTUMS</a>
+      </div>
+      <li><a href="overall-stats.html">Stats</a></li>
+    <li><a href="credits.html">Credits</a></li>
+    <li><a href="settings.html">Settings</a></li>
+          </ul>
+</head>
+<body>
+    <p  style="margin-top: 5px;text-indent: 15px;" class="p4">ACT I: INFINITE HYPERDEATH</p>
+    <hr width="98%" size="4" style="margin-top: -55px;" color="#FFFFFF">
+    <br>
+    <button class="buttonlayerover"style="background-image: url(Images/Buttons/Layer-1.png);" id="selectl1">LAYER 1: LIMBO</button>
+    <br>
+    <button class="buttonlayerover"style="background-image: url(Images/Buttons/Layer-2.png);" id="selectl2">LAYER 2: LUST</button>
+    <br>
+    <button class="buttonlayerover"style="background-image: url(Images/Buttons/Layer-3.png);" id="selectl3">LAYER 3: GLUTTONY</button>
+    <br>
+    <div id="progresstextsecrets" style="display: block;margin-left: auto;margin-right: auto;width:50%;text-align:center;font-family: VCROSDMONO; color: #FFFFFF; font-size: 25px; height: 40px;"></div>
+    <div class="center" id="progresstextsecrets"></div>
+    <div class="center3" id="center3progressscrts" style="width: fit-content;">
+    <div class="pixel-corners--wrapper">
+    <div id="secretsprgrswrpr" class="progressbar">
+      <div id="secretsprgrs"></div>
+    </div>
+  </div>
+
+
+<br><br>
+  <div id="progresstextchallenge" style="display: block;margin-left: auto;margin-right: auto;width:80%;text-align:center;font-family: VCROSDMONO; color: #FFFFFF; font-size: 25px; height: 40px;"></div>
+  <div class="center" id="progresstextchallenge"></div>
+  <div class="center3" id="center3progresschlng" style="width: fit-content;">
+  <div class="pixel-corners--wrapper">
+  <div id="challengeprgrswrpr" class="progressbar">
+    <div id="challengeprgrs"></div>
+  </div>
+</div>
+
+<br><br>
+  <div id="progresstextranks" style="display: block;margin-left: auto;margin-right: auto;width:80%;text-align:center;font-family: VCROSDMONO; color: #FFFFFF; font-size: 25px; height: 40px;"></div>
+  <div class="center" id="progresstextranks"></div>
+  <div class="center3" id="center3progressrnk" style="width: fit-content;">
+  <div class="pixel-corners--wrapper">
+  <div id="rankprgrswrpr" class="progressbar">
+    <div id="rankprgrs"></div>
+  </div>
+</div>
+
+<br><br>
+  <div id="progresstextall" style="display: block;margin-left: auto;margin-right: auto;width:80%;text-align:center;font-family: VCROSDMONO; color: #FFFFFF; font-size: 25px; height: 40px;"></div>
+  <div class="center" id="progresstextall"></div>
+  <div class="center3" id="center3progressall" style="width: fit-content;">
+  <div class="pixel-corners--wrapper">
+  <div id="allprgrswrpr" class="progressbar">
+    <div id="allprgrs"></div>
+  </div>
+</div>
+<br>
+
+</div>
+
+    <script>
+              $(document).ready(function(){
+        $("#selectl1").click(function(){
+          window.location.href = "layer1.html";
+        })
+        $("#selectl2").click(function(){
+          window.location.href = "layer2.html";
+        })
+
+        function percentage(partialValue, totalValue) {
+        return (100 * partialValue) / totalValue;
+        }
+        var secretsgottenacti = 0;
+        const actiprgsecrets = [localStorage.s1011,localStorage.s2011,localStorage.s3011,localStorage.s4011,localStorage.s5011,localStorage.s1012,localStorage.s2012,localStorage.s3012,localStorage.s4012,localStorage.s5012, localStorage.s1013,localStorage.s2013,localStorage.s3013,localStorage.s4013,localStorage.s5013, localStorage.s1021,localStorage.s2021,localStorage.s3021,localStorage.s4021,localStorage.s5021,localStorage.s1022,localStorage.s2022,localStorage.s3022,localStorage.s4022,localStorage.s5022,     localStorage.s1023, localStorage.s2023, localStorage.s3023, localStorage.s4023, localStorage.s5023]
+        var secretstotalacti = actiprgsecrets.length;
+
+        function iftruesecrets(value){
+          if (value == "true"){
+            secretsgottenacti += 1
+          }
+        }
+        actiprgsecrets.forEach(iftruesecrets);
+        var secretsprcntgacti = percentage(secretsgottenacti, secretstotalacti);
+
+        console.log("Secrets Percentage: " + secretsprcntgacti)
+
+
+
+
+
+        
+        var rnkgottenacti = 0;
+        const actiprgrnk = [localStorage.rnk011, localStorage.rnk012, localStorage.rnk013, localStorage.rnk014, localStorage.rnk021,localStorage.rnk022, localStorage.rnk023];
+        var rnktotalacti = actiprgrnk.length * 7;
+
+        function iftruernk(value){
+          if (value == "D"){
+            rnkgottenacti += 1
+          }
+          else if (value == "C"){
+            rnkgottenacti += 2
+          }
+          else if (value == "B"){
+            rnkgottenacti += 3
+          }
+          else if (value == "A"){
+            rnkgottenacti += 4
+          }
+          else if (value == "S"){
+            rnkgottenacti += 5
+          }
+          else if (value == "P"){
+            rnkgottenacti += 7
+          }
+        }
+        actiprgrnk.forEach(iftruernk);
+        var rnkprcntgacti = percentage(rnkgottenacti, rnktotalacti);
+
+        console.log("Ranks Percentage: " + rnkprcntgacti);
+
+
+    
+
+
+        var chlgottenacti = 0;
+        const actiprgchl = [localStorage.chl011, localStorage.chl012, localStorage.chl013, localStorage.chl014, localStorage.chl021,localStorage.chl022,localStorage.chl023];
+        var chltotalacti = actiprgchl.length;
+
+        function iftruechl(value){
+          if (value == "true"){
+            chlgottenacti += 1
+          }
+        }
+        actiprgchl.forEach(iftruechl);
+        var chlprcntgacti = percentage(chlgottenacti, chltotalacti);
+
+        console.log("Challenges Percentage: " + chlprcntgacti);
+        
+
+
+
+
+        var overallprcntgacti = (((30 * chlprcntgacti) + (40 * rnkprcntgacti) + (30 * secretsprcntgacti)) / 100)
+        console.log(overallprcntgacti);
+
+
+
+
+        var percentagemin = Math.min(secretsprcntgacti, rnkprcntgacti, chlprcntgacti, overallprcntgacti)
+
+if(percentagemin > 35){
+  $("#secretsprgrs").text("SECRETS PROGRESS:" + Math.round(secretsprcntgacti) + "%")
+}
+else if (percentagemin < 35)
+{
+  $("#progresstextsecrets").append("SECRETS PROGRESS:" + Math.round(secretsprcntgacti) + "%")
+}
+$("#secretsprgrs").css("width", secretsprcntgacti + "%")
+
+if(percentagemin > 35){
+  $("#rankprgrs").text("RANKS PROGRESS:" + Math.round(rnkprcntgacti) + "%")
+}
+else if (percentagemin < 35)
+{
+  $("#progresstextranks").append("RANKS PROGRESS:" + Math.round(rnkprcntgacti) + "%")
+}
+$("#rankprgrs").css("width", rnkprcntgacti + "%")
+
+if(percentagemin > 35){
+  $("#challengeprgrs").text("CHALLENGE PROGRESS:" + Math.round(chlprcntgacti) + "%")
+}
+else if (percentagemin < 35)
+{
+  $("#progresstextchallenge").append("CHALLENGE PROGRESS:" + Math.round(chlprcntgacti) + "%")
+}
+$("#challengeprgrs").css("width", Math.round(chlprcntgacti) + "%")
+
+
+if(percentagemin > 35){
+  $("#allprgrs").text("OVERALL PROGRESS:" + Math.round(overallprcntgacti) + "%")
+}
+else if (percentagemin < 35)
+{
+  $("#progresstextall").append("OVERALL PROGRESS:" + Math.round(overallprcntgacti) + "%")
+}
+$("#allprgrs").css("width", Math.round(overallprcntgacti) + "%")
+
+
+
+    })
+
+    </script>
+</body>
+</html>

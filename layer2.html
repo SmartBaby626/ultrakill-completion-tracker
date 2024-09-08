@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layer 1: Limbo</title>
+    <link rel="icon" href="Images/favicon.png">
+    <script src="jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="w3.css">
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li class="dropdown">
+      <a href="levels.html" class="dropbtn active" style="color: black !important">Levels</a>
+      <div class="dropdown-content">
+        <a href="overture.html">OVERTURE: THE MOUTH OF HELL</a>
+        <a href="acti.html">ACT I: INFINITE HYPERDEATH</a>
+        <a href="actii.html">ACT II: IMPERFECT HATRED</a>
+        <a href="actiii.html">ACT III: GODFIST SUICIDE</a>
+        <a href="psanctums.html">PRIME SANCTUMS</a>
+      </div>
+      <li><a href="overall-stats.html">Stats</a></li>
+    <li><a href="credits.html">Credits</a></li>
+    <li><a href="settings.html">Settings</a></li>
+          </ul>
+</head>
+<body>
+    <p  style="margin-top: 5px;text-indent: 15px;" class="p4">LAYER 2: LUST</p>
+    <hr width="98%" size="4" style="margin-top: -55px;" color="#FFFFFF">
+    <br>
+    <button class="buttonlayerover"style="background-image: url(Images/Buttons/2-1_Bridgeburner.png);" id="select2-1">2-1: BRIDGEBURNER</button>
+    <br>
+    <button class="buttonlayerover"style="background-image: url(Images/Buttons/2-2_Death_at_20,000_Volts.png);" id="select2-2">2-2: DEATH AT 20,000 VOLTS</button>
+    <br>
+    <button class="buttonlayerover"style="background-image: url(Images/Buttons/2-3_Sheer_Heart_Attack.png);" id="select2-3">2-3: SHEER HEART ATTACK</button>
+    <br>
+    <button class="buttonlayerover"style="background-image: url(Images/Buttons/2-4_Court_of_the_Corpse_King.png);" id="select2-4">2-4: COURT OF THE CORPSE KING</button>
+    <br>
+    <button class="buttonlayerover"style="background-image: url(Images/Buttons/2-S_All_Imperfect_Love_Song.png);" id="select2-S">2-S: ALL-IMPERFECT LOVE SONG</button>
+    <br>
+    <div id="progresstextsecrets" style="display: block;margin-left: auto;margin-right: auto;width:50%;text-align:center;font-family: VCROSDMONO; color: #FFFFFF; font-size: 25px; height: 40px;"></div>
+    <div class="center" id="progresstextsecrets"></div>
+    <div class="center3" id="center3progressscrts" style="width: fit-content;">
+    <div class="pixel-corners--wrapper">
+    <div id="secretsprgrswrpr" class="progressbar">
+      <div id="secretsprgrs"></div>
+    </div>
+  </div>
+
+
+<br><br>
+  <div id="progresstextchallenge" style="display: block;margin-left: auto;margin-right: auto;width:80%;text-align:center;font-family: VCROSDMONO; color: #FFFFFF; font-size: 25px; height: 40px;"></div>
+  <div class="center" id="progresstextchallenge"></div>
+  <div class="center3" id="center3progresschlng" style="width: fit-content;">
+  <div class="pixel-corners--wrapper">
+  <div id="challengeprgrswrpr" class="progressbar">
+    <div id="challengeprgrs"></div>
+  </div>
+</div>
+
+<br><br>
+  <div id="progresstextranks" style="display: block;margin-left: auto;margin-right: auto;width:80%;text-align:center;font-family: VCROSDMONO; color: #FFFFFF; font-size: 25px; height: 40px;"></div>
+  <div class="center" id="progresstextranks"></div>
+  <div class="center3" id="center3progressrnk" style="width: fit-content;">
+  <div class="pixel-corners--wrapper">
+  <div id="rankprgrswrpr" class="progressbar">
+    <div id="rankprgrs"></div>
+  </div>
+</div>
+
+<br><br>
+  <div id="progresstextall" style="display: block;margin-left: auto;margin-right: auto;width:80%;text-align:center;font-family: VCROSDMONO; color: #FFFFFF; font-size: 25px; height: 40px;"></div>
+  <div class="center" id="progresstextall"></div>
+  <div class="center3" id="center3progressall" style="width: fit-content;">
+  <div class="pixel-corners--wrapper">
+  <div id="allprgrswrpr" class="progressbar">
+    <div id="allprgrs"></div>
+  </div>
+</div>
+<br>
+
+</div>
+
+    <script>
+              $(document).ready(function(){
+        $("#select2-1").click(function(){
+          window.location.href = "Level Pages/2-1_bridgeburner.html";
+          
+        })
+        $("#select2-2").click(function(){
+          window.location.href = "Level Pages/2-2_death_at_20,000_volts.html";
+        })
+        $("#select2-3").click(function(){
+          window.location.href = "Level Pages/2-3_sheer_heart_attack.html";
+        })
+        $("#select1-4").click(function(){
+          window.location.href = "Level Pages/1-4_clair_de_lune.html";
+        })
+        $("#select1-S").click(function(){
+          window.location.href = "Level Pages/1-S_the_witless.html";
+        })
+
+
+        function percentage(partialValue, totalValue) {
+        return (100 * partialValue) / totalValue;
+        }
+        var secretsgottenl1 = 0;
+        const l1prgsecrets = [localStorage.s1021,localStorage.s2021,localStorage.s3021,localStorage.s4021,localStorage.s5021, localStorage.s1022,localStorage.s2022,localStorage.s3022,localStorage.s4022,localStorage.s5022,     localStorage.s1023, localStorage.s2023, localStorage.s3023, localStorage.s4023, localStorage.s5023]
+        var secretstotall1 = l1prgsecrets.length;
+
+        function iftruesecrets(value){
+          if (value == "true"){
+            secretsgottenl1 += 1
+          }
+        }
+        l1prgsecrets.forEach(iftruesecrets);
+        var secretsprcntgl1 = percentage(secretsgottenl1, secretstotall1);
+
+        console.log("Secrets Percentage: " + secretsprcntgl1)
+
+
+
+
+        
+        var rnkgottenl1 = 0;
+        const l1prgrnk = [localStorage.rnk021,localStorage.rnk022, localStorage.rnk023];
+        var rnktotall1 = l1prgrnk.length * 7;
+
+        function iftruernk(value){
+          if (value == "D"){
+            rnkgottenl1 += 1
+          }
+          else if (value == "C"){
+            rnkgottenl1 += 2
+          }
+          else if (value == "B"){
+            rnkgottenl1 += 3
+          }
+          else if (value == "A"){
+            rnkgottenl1 += 4
+          }
+          else if (value == "S"){
+            rnkgottenl1 += 5
+          }
+          else if (value == "P"){
+            rnkgottenl1 += 7
+          }
+        }
+        l1prgrnk.forEach(iftruernk);
+        var rnkprcntgl1 = percentage(rnkgottenl1, rnktotall1);
+
+        console.log("Ranks Percentage: " + rnkprcntgl1);
+
+
+    
+
+
+        var chlgottenl1 = 0;
+        const l1prgchl = [localStorage.chl021, localStorage.chl022, localStorage.chl023];
+        var chltotall1 = l1prgchl.length;
+
+        function iftruechl(value){
+          if (value == "true"){
+            chlgottenl1 += 1
+          }
+        }
+        l1prgchl.forEach(iftruechl);
+        var chlprcntgl1 = percentage(chlgottenl1, chltotall1);
+
+        console.log("Challenges Percentage: " + chlprcntgl1);
+        
+
+
+
+
+        var overallprcntgl1 = (((30 * chlprcntgl1) + (40 * rnkprcntgl1) + (30 * secretsprcntgl1)) / 100)
+        console.log(overallprcntgl1);
+
+
+
+
+
+        var percentagemin = Math.min(secretsprcntgl1, rnkprcntgl1, chlprcntgl1, overallprcntgl1)
+
+if(percentagemin > 35){
+  $("#secretsprgrs").text("SECRETS PROGRESS:" + Math.round(secretsprcntgl1) + "%")
+}
+else if (percentagemin < 35)
+{
+  $("#progresstextsecrets").append("SECRETS PROGRESS:" + Math.round(secretsprcntgl1) + "%")
+}
+$("#secretsprgrs").css("width", secretsprcntgl1 + "%")
+
+if(percentagemin > 35){
+  $("#rankprgrs").text("RANKS PROGRESS:" + Math.round(rnkprcntgl1) + "%")
+}
+else if (percentagemin < 35)
+{
+  $("#progresstextranks").append("RANKS PROGRESS:" + Math.round(rnkprcntgl1) + "%")
+}
+$("#rankprgrs").css("width", rnkprcntgl1 + "%")
+
+if(percentagemin > 35){
+  $("#challengeprgrs").text("CHALLENGE PROGRESS:" + Math.round(chlprcntgl1) + "%")
+}
+else if (percentagemin < 35)
+{
+  $("#progresstextchallenge").append("CHALLENGE PROGRESS:" + Math.round(chlprcntgl1) + "%")
+}
+$("#challengeprgrs").css("width", Math.round(chlprcntgl1) + "%")
+
+
+if(percentagemin > 35){
+  $("#allprgrs").text("OVERALL PROGRESS:" + Math.round(overallprcntgl1) + "%")
+}
+else if (percentagemin < 35)
+{
+  $("#progresstextall").append("OVERALL PROGRESS:" + Math.round(overallprcntgl1) + "%")
+}
+$("#allprgrs").css("width", Math.round(overallprcntgl1) + "%")
+
+
+    })
+
+    </script>
+</body>
+</html>

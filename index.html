@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ULTRAKILL Completion Tracker</title>
+    <script src="jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" href="Images/favicon.png">
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="levels.html" class="dropbtn">Levels</a>
+          <div class="dropdown-content">
+            <a href="overture.html">OVERTURE: THE MOUTH OF HELL</a>
+            <a href="acti.html">ACT I: INFINITE HYPERDEATH</a>
+            <a href="actii.html">ACT II: IMPERFECT HATRED</a>
+            <a href="actiii.html">ACT III: GODFIST SUICIDE</a>
+            <a href="psanctums.html">PRIME SANCTUMS</a>
+          </div>
+          <li><a href="overall-stats.html">Stats</a></li>
+        <li><a href="credits.html">Credits</a></li>
+        <li><a href="settings.html">Settings</a></li>
+
+        </li>
+      </ul>
+      <br>
+      <figure>
+      <img src="Images/ultrakill-logo.png"  class="center"><img>
+      <figcaption class="p1">----------------------------------------------------------</figcaption>
+      </figure>
+      <p class="mankinddead">MANKIND IS DEAD<br>BLOOD IS FUEL<br>HELL IS FULL</p>
+      <p class="p1">-----------------------------</p>
+      <div class="center">
+        <br>
+        <button class="buttonlayer2" id="start">BEGIN</button>
+        </div>
+      <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+              window.location.href = "levels.html";
+            })
+        })
+      </script>
+
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overall Stats</title>
+    <script src="jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" href="Images/favicon.png">
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="levels.html" class="dropbtn">Levels</a>
+          <div class="dropdown-content">
+            <a href="overture.html">OVERTURE: THE MOUTH OF HELL</a>
+            <a href="acti.html">ACT I: INFINITE HYPERDEATH</a>
+            <a href="actii.html">ACT II: IMPERFECT HATRED</a>
+            <a href="actiii.html">ACT III: GODFIST SUICIDE</a>
+            <a href="psanctums.html">PRIME SANCTUMS</a>
+          </div>
+          <li><a class="active" href="overall-stats.html">Stats</a></li>
+        <li><a href="credits.html">Credits</a></li>
+        <li><a href="settings.html">Settings</a></li>
+
+
+        </li>
+      </ul>
+      <br>
+
+
+
+</body>
+<div id="progresstextsecrets" style="display: block;margin-left: auto;margin-right: auto;width:50%;text-align:center;font-family: VCROSDMONO; color: #FFFFFF; font-size: 25px; height: 40px;"></div>
+<div class="center" id="progresstextsecrets"></div>
+<div class="center3" id="center3progressscrts" style="width: fit-content;">
+<div class="pixel-corners--wrapper">
+<div id="secretsprgrswrpr" class="progressbar">
+  <div id="secretsprgrs"></div>
+</div>
+</div>
+
+
+<br><br>
+<div id="progresstextchallenge" style="display: block;margin-left: auto;margin-right: auto;width:80%;text-align:center;font-family: VCROSDMONO; color: #FFFFFF; font-size: 25px; height: 40px;"></div>
+<div class="center" id="progresstextchallenge"></div>
+<div class="center3" id="center3progresschlng" style="width: fit-content;">
+<div class="pixel-corners--wrapper">
+<div id="challengeprgrswrpr" class="progressbar">
+<div id="challengeprgrs"></div>
+</div>
+</div>
+
+<br><br>
+<div id="progresstextranks" style="display: block;margin-left: auto;margin-right: auto;width:80%;text-align:center;font-family: VCROSDMONO; color: #FFFFFF; font-size: 25px; height: 40px;"></div>
+<div class="center" id="progresstextranks"></div>
+<div class="center3" id="center3progressrnk" style="width: fit-content;">
+<div class="pixel-corners--wrapper">
+<div id="rankprgrswrpr" class="progressbar">
+<div id="rankprgrs"></div>
+</div>
+</div>
+
+<br><br>
+<div id="progresstextall" style="display: block;margin-left: auto;margin-right: auto;width:80%;text-align:center;font-family: VCROSDMONO; color: #FFFFFF; font-size: 25px; height: 40px;"></div>
+<div class="center" id="progresstextall"></div>
+<div class="center3" id="center3progressall" style="width: fit-content;">
+<div class="pixel-corners--wrapper">
+<div id="allprgrswrpr" class="progressbar">
+<div id="allprgrs"></div>
+</div>
+</div>
+<br>
+
+</div>
+
+<script>
+              $(document).ready(function(){
+    function percentage(partialValue, totalValue) {
+    return (100 * partialValue) / totalValue;
+    }
+    var secretsgottenall = 0;
+    const allprgsecrets = [localStorage.s1001, localStorage.s2001, localStorage.s3001, localStorage.s4001, localStorage.s5001, localStorage.s1002, localStorage.s2002, localStorage.s3002, localStorage.s4002, localStorage.s5002, localStorage.s1003, localStorage.s2003, localStorage.s3003,localStorage.s1004, localStorage.s2004, localStorage.s3004, localStorage.s1011,localStorage.s2011,localStorage.s3011,localStorage.s4011,localStorage.s5011, localStorage.s1012,localStorage.s2012,localStorage.s3012,localStorage.s4012,localStorage.s5012,localStorage.s1013,localStorage.s2013,localStorage.s3013,localStorage.s4013,localStorage.s5013, localStorage.s1021,localStorage.s2021,localStorage.s3021,localStorage.s4021,localStorage.s5021,localStorage.s1022,localStorage.s2022,localStorage.s3022,localStorage.s4022,localStorage.s5022,     localStorage.s1023, localStorage.s2023, localStorage.s3023, localStorage.s4023, localStorage.s5023]
+    var secretstotalall = allprgsecrets.length;
+
+    function iftruesecrets(value){
+      if (value == "true"){
+        secretsgottenall += 1
+      }
+    }
+    allprgsecrets.forEach(iftruesecrets);
+    var secretsprcntgall = percentage(secretsgottenall, secretstotalall);
+
+    console.log("Secrets Percentage: " + secretsprcntgall)
+
+
+
+
+
+    
+    var rnkgottenall = 0;
+    const allprgrnk = [localStorage.rnk001, localStorage.rnk002, localStorage.rnk003, localStorage.rnk004, localStorage.rnk005,localStorage.rnk011, localStorage.rnk012, localStorage.rnk013, localStorage.rnk014, localStorage.rnk021, localStorage.rnk022, localStorage.rnk023];
+    var rnktotalall = allprgrnk.length * 7;
+
+    function iftruernk(value){
+      if (value == "D"){
+        rnkgottenall += 1
+      }
+      else if (value == "C"){
+        rnkgottenall += 2
+      }
+      else if (value == "B"){
+        rnkgottenall += 3
+      }
+      else if (value == "A"){
+        rnkgottenall += 4
+      }
+      else if (value == "S"){
+        rnkgottenall += 5
+      }
+      else if (value == "P"){
+        rnkgottenall += 7
+      }
+    }
+    allprgrnk.forEach(iftruernk);
+    var rnkprcntgall = percentage(rnkgottenall, rnktotalall);
+
+    console.log("Ranks Percentage: " + rnkprcntgall);
+
+
+
+
+
+    var chlgottenall = 0;
+    const allprgchl = [localStorage.chl001, localStorage.chl002, localStorage.chl003, localStorage.chl004, localStorage.chl005, localStorage.chl011, localStorage.chl012, localStorage.chl013, localStorage.chl014, localStorage.chl021,localStorage.chl022, localStorage.chl023];
+    var chltotalall = allprgchl.length;
+
+    function iftruechl(value){
+      if (value == "true"){
+        chlgottenall += 1
+      }
+    }
+    allprgchl.forEach(iftruechl);
+    var chlprcntgall = percentage(chlgottenall, chltotalall);
+
+    console.log("Challenges Percentage: " + chlprcntgall);
+    
+
+
+
+
+    var overallprcntgall = (((30 * chlprcntgall) + (40 * rnkprcntgall) + (30 * secretsprcntgall)) / 100)
+    console.log(overallprcntgall);
+
+    var percentageminall = Math.min(secretsprcntgall, rnkprcntgall, chlprcntgall, overallprcntgall)
+
+    if(percentageminall > 35){
+      $("#secretsprgrs").text("SECRETS PROGRESS:" + Math.round(secretsprcntgall) + "%")
+    }
+    else if (percentageminall < 35)
+    {
+      $("#progresstextsecrets").append("SECRETS PROGRESS:" + Math.round(secretsprcntgall) + "%")
+    }
+    $("#secretsprgrs").css("width", secretsprcntgall + "%")
+
+    if(percentageminall > 35){
+      $("#rankprgrs").text("RANKS PROGRESS:" + Math.round(rnkprcntgall) + "%")
+    }
+    else if (percentageminall < 35)
+    {
+      $("#progresstextranks").append("RANKS PROGRESS:" + Math.round(rnkprcntgall) + "%")
+    }
+    $("#rankprgrs").css("width", rnkprcntgall + "%")
+
+    if(percentageminall > 35){
+      $("#challengeprgrs").text("CHALLENGE PROGRESS:" + Math.round(chlprcntgall) + "%")
+    }
+    else if (percentageminall < 35)
+    {
+      $("#progresstextchallenge").append("CHALLENGE PROGRESS:" + Math.round(chlprcntgall) + "%")
+    }
+    $("#challengeprgrs").css("width", Math.round(chlprcntgall) + "%")
+
+
+    if(percentageminall > 35){
+      $("#allprgrs").text("OVERALL PROGRESS:" + Math.round(overallprcntgall) + "%")
+    }
+    else if (percentageminall < 35)
+    {
+      $("#progresstextall").append("OVERALL PROGRESS:" + Math.round(overallprcntgall) + "%")
+    }
+    $("#allprgrs").css("width", Math.round(overallprcntgall) + "%")
+
+
+
+
+})
+
+</script>
+</body>
+</html>
+</html>
